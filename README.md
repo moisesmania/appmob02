@@ -1,4 +1,4 @@
-Quase perfeito! Apenas precisa ajustar a **formatação da seção de comandos** e fechar corretamente os blocos de código (` ```bash ` e ` ``` `), além de separar melhor os passos. Aqui está a versão corrigida e formatada corretamente:
+
 
 ````markdown
 # 📱 GeraNumApp
