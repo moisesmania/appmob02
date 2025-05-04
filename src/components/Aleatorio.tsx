@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 
-export default function App() {
+export default function Aleatorio() {
   const [min, setMin] = useState('');
   const [max, setMax] = useState('');
   const [numero, setNumero] = useState<number | null>(null);
 
   const gerarNumero = () => {
-    const minVal = parseInt(min);
-    const maxVal = parseInt(max);
-
-    if (!isNaN(minVal) && !isNaN(maxVal) && minVal <= maxVal) {
-      const num = Math.floor(Math.random() * (maxVal - minVal + 1)) + minVal;
+    const minNum = parseInt(min);
+    const maxNum = parseInt(max);
+    if (!isNaN(minNum) && !isNaN(maxNum) && maxNum >= minNum) {
+      const num = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
       setNumero(num);
     } else {
       setNumero(null);
@@ -20,8 +19,6 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Gerador de Número Aleatório</Text>
-
       <TextInput
         style={styles.input}
         placeholder="Valor mínimo"
@@ -36,9 +33,7 @@ export default function App() {
         value={max}
         onChangeText={setMax}
       />
-
-      <Button title="Gerar Número" onPress={gerarNumero} />
-
+      <Button title="Gerar número aleatório" onPress={gerarNumero} color="#004d00" />
       {numero !== null && (
         <Text style={styles.resultado}>Número gerado: {numero}</Text>
       )}
@@ -48,27 +43,21 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
+    backgroundColor: '#fff',
     padding: 20,
-  },
-  titulo: {
-    fontSize: 22,
-    fontWeight: 'bold',
-    marginBottom: 20,
-    textAlign: 'center',
+    borderRadius: 8,
   },
   input: {
     borderWidth: 1,
-    borderColor: '#ccc',
-    padding: 10,
-    marginBottom: 15,
+    borderColor: '#999',
     borderRadius: 5,
+    marginBottom: 10,
+    padding: 10,
   },
   resultado: {
-    fontSize: 18,
-    marginTop: 20,
+    marginTop: 15,
+    fontSize: 20,
     textAlign: 'center',
-    color: 'green',
+    color: '#082032',
   },
 });
