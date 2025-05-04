@@ -1,5 +1,9 @@
 
 
+
+
+
+
 ````markdown
 # 📱 GeraNumApp
 
@@ -9,19 +13,19 @@
 
 ## ✨ Funcionalidades
 
-- Entrada de valor mínimo e máximo
-- Geração de número aleatório entre os valores fornecidos
-- Interface simples e responsiva
-- Compatível com dispositivos móveis e web (via Expo Go ou navegador)
+- Entrada de valor mínimo e máximo  
+- Geração de número aleatório entre os valores fornecidos  
+- Interface simples e responsiva  
+- Compatível com dispositivos móveis e web (via Expo Go ou navegador)  
 
 ---
 
 ## 🛠️ Tecnologias utilizadas
 
-- React Native
-- Expo
-- TypeScript
-- JavaScript
+- React Native  
+- Expo  
+- TypeScript  
+- JavaScript  
 
 ---
 
@@ -45,18 +49,19 @@ npm install
 npx expo start
 ```
 
-* Será exibido um **QR Code no terminal**.
-* **Escaneie o QR Code com o app Expo Go** (disponível na Play Store/App Store) para rodar o app no seu celular.
-* Ou pressione **w** no terminal para abrir o projeto diretamente no navegador (modo web).
+Será exibido um QR Code no terminal.
 
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Sinta-se livre para usá-lo e modificá-lo!
+* Escaneie o QR Code com o app **Expo Go** (disponível na Play Store/App Store) para rodar o app no seu celular.
+* Ou pressione **`w`** no terminal para abrir o projeto diretamente no navegador (modo web).
 
 ```
 
+---
+
+Você pode copiar e colar isso diretamente no seu arquivo `README.md`.
+
+Deseja que eu gere o arquivo pronto para você?
+```
 
 
 
